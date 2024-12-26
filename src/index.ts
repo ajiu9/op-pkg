@@ -7,6 +7,14 @@ import process from 'node:process'
 import { findUp } from 'find-up'
 import { interopDefault, resolvePathSync } from 'mlly'
 
+export interface PackageInfo {
+  name: string
+  rootPath: string
+  packageJsonPath: string
+  version: string
+  packageJson: PackageJson
+}
+
 export interface PackageResolvingOptions {
   paths?: string[]
 
