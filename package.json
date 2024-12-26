@@ -1,7 +1,7 @@
 {
   "name": "op-pkg",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "packageManager": "pnpm@9.0.2",
   "description": "Commonly used typescript types",
   "author": "Ajiu9 <615944323@qq.com>",
