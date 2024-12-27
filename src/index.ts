@@ -68,7 +68,7 @@ export function isPackageExists(name: string, options: PackageResolvingOptions =
   return !!resolvePackage(name, options)
 }
 
-export async function getPackageInfo(name: string, options: PackageResolvingOptions = {}) {
+export async function getPackageInfo(name: string, options: PackageResolvingOptions = {}): Promise<PackageInfo | undefined> {
   const packageJsonPath = getPackageJsonPath(name, options)
   if (!packageJsonPath)
     return
@@ -77,7 +77,7 @@ export async function getPackageInfo(name: string, options: PackageResolvingOpti
 
   return {
     name,
-    version: packageJson.version,
+    version: packageJson.version!,
     rootPath: dirname(packageJsonPath),
     packageJsonPath,
     packageJson,

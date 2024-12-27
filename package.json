@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.0.1",
   "packageManager": "pnpm@9.0.2",
-  "description": "Commonly used typescript types",
+  "description": "operating package",
   "author": "Ajiu9 <615944323@qq.com>",
   "license": "MIT",
   "homepage": "https://github.com/ajiu9/op-pkg#readme",
@@ -12,7 +12,7 @@
     "url": "git+https://github.com/ajiu9/op-pkg.git"
   },
   "bugs": "https://github.com/ajiu9/op-pkg/issues",
-  "keywords": [],
+  "keywords": ["operate", "package", "node", "javascript", "typescript"],
   "sideEffects": false,
   "exports": {
     ".": {
